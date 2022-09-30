@@ -2236,11 +2236,11 @@ LEMMA Cardinality1 == ASSUME Linearizable,
 <1> QED
   BY <1>3
 
-LEMMA StrongLinearizability == Spec => [](Cardinality(M) = 1)
+THEOREM StrongLinearizability == Spec => [](Cardinality(M) = 1)
   BY PTL, Linearizability, AlwaysUniquePossibility, Cardinality1 DEF Linearizable, M
 
 =============================================================================
 \* Modification History
-\* Last modified Fri Sep 30 14:26:12 EDT 2022 by prasadjayanti
+\* Last modified Fri Sep 30 14:30:33 EDT 2022 by prasadjayanti
 \* Last modified Fri Sep 30 14:24:57 EDT 2022 by SiddharthaJayanti
 \* Created Fri Sep 30 13:41:35 EDT 2022 by SiddharthaJayanti
